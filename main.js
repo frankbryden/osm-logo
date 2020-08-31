@@ -21,7 +21,7 @@ class Moon {
         this.cp1 = {x: this.pos.x - this.r, y: this.pos.y + 0.65*this.r};
         this.cp2 = {x: this.pos.x + this.r, y: this.pos.y + 0.65*this.r};
 
-        //new version using translate (needed to support rotate)
+        //new version using translate (using relative values - needed to support rotate)
         this.cp1 = {x: -this.r, y: 0.65*this.r};
         this.cp2 = {x: this.r, y: 0.65*this.r};
         
