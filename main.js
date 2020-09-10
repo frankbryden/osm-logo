@@ -54,7 +54,7 @@ class EtsiLogo{
         this.colors = ["#62cbe2", "#337fc2", "#704fa0", "#9c59a4", "#ea367a"];
         this.init();
         this.delta = 0;
-        this.closer = 20;
+        this.closer = 40;
     }
 
     init(){
@@ -97,7 +97,7 @@ class EtsiLogo{
 }
 
 let moon = new Moon({x: 200, y: 200}, 50, Math.PI/2, "rgb(200, 90, 90)");
-let logo = new EtsiLogo(200, 300, 40);
+let logo = new EtsiLogo(canvas.clientWidth/2, canvas.clientHeight/2, 90);
 function render() {
     ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
 
